@@ -1,3 +1,0 @@
-D:\bin\cmake.exe -E rm -f CMakeFiles\order_forge.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\order_forge.dir/objects.a @CMakeFiles\order_forge.dir\objects1.rsp
-C:\MinGW\bin\c++.exe -Wl,--whole-archive CMakeFiles\order_forge.dir/objects.a -Wl,--no-whole-archive -o order_forge.exe -Wl,--out-implib,liborder_forge.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\order_forge.dir\linkLibs.rsp

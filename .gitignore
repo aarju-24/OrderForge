@@ -1,0 +1,10 @@
+# Ignore CMake build directory and temporary files
+build/
+.vs/
+.vscode/
+
+# Ignore compiled executables and object files
+*.exe
+*.obj
+*.o
+*.a
