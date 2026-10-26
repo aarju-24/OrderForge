@@ -7,11 +7,12 @@
 
 // Structure representing an executed trade execution match
 struct Trade {
-    OrderId buy_order_id;
-    OrderId sell_order_id;
-    Price execution_price;
-    Quantity executed_quantity;
-    Timestamp timestamp;
+    TradeId trade_id{0};
+    OrderId buy_order_id{0};
+    OrderId sell_order_id{0};
+    Price execution_price{0};
+    Quantity executed_quantity{0};
+    Timestamp timestamp{0};
 };
 
 #endif // TRADE_HPP

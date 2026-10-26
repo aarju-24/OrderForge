@@ -1,10 +1,31 @@
-# Ignore CMake build directory and temporary files
+# Build and binary artifacts
 build/
-.vs/
-.vscode/
-
-# Ignore compiled executables and object files
+cmake-build-*/
+out/
+bin/
+output/
 *.exe
 *.obj
 *.o
 *.a
+*.dll
+*.so
+*.dylib
+
+# IDE and editor files
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Diagnostic and temporary files
+*.log
+compile_commands.json
+.cache/
+
+# Python cache and test artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/

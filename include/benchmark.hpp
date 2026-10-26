@@ -31,9 +31,10 @@ public:
 
         size_t total_trades = 0;
         for (const auto& order : test_orders) {
-            auto trades = engine.process_order(order);
-            total_trades += trades.size();
+            auto result = engine.process_order(order);
+            total_trades += result.trades.size();
         }
+
 
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double, std::milli> elapsed = end - start;
